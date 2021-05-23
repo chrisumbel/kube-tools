@@ -36,3 +36,7 @@ RUN mv kubectl /usr/local/bin
 # aws cli
 RUN curl -L https://awscli.amazonaws.com/awscli-exe-linux-$(uname -m).zip -o "awscliv2.zip"
 RUN unzip awscliv2.zip && ./aws/install && rm -rf awscliv2.zip aws
+
+## azure cli
+# RUN apt-get install python3 python3-pip
+# RUN pip install pip install azure-cli
