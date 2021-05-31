@@ -15,5 +15,16 @@ This project is still rather new so the list of included tools is still sparse, 
 * nmap 
 * curl
 
+## Building
+
+```
+BASE_IMAGE=<some registry>/<some image>:<some tag> make build
+```
+
+## Releasing
+```
+BASE_IMAGE=<some registry>/<some image>:<some tag> make release
+```
+
 ## Usage
 *coming soon*

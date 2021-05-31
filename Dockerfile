@@ -32,11 +32,3 @@ RUN apt-get -y install emacs-nox procps nmap bind9-dnsutils netcat socat nginx o
 RUN curl -LO https://dl.k8s.io/release/v1.21.0/bin/linux/$(if [[ "$(uname -m)" == "aarch64" || "$(uname -m)" == "arm64" ]]; then echo "arm64"; else echo "amd64"; fi)/kubectl
 RUN chmod +x kubectl
 RUN mv kubectl /usr/local/bin
-
-# aws cli
-RUN curl -L https://awscli.amazonaws.com/awscli-exe-linux-$(uname -m).zip -o "awscliv2.zip"
-RUN unzip awscliv2.zip && ./aws/install && rm -rf awscliv2.zip aws
-
-## azure cli
-# RUN apt-get install python3 python3-pip
-# RUN pip install pip install azure-cli
