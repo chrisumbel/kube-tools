@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 ./util/check-args.sh
 
 if [ $? -eq 0 ]; then 
