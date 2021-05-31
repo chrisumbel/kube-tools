@@ -5,4 +5,5 @@ if [ $? -eq 0 ]; then
     docker rmi $BASE_IMAGE
     docker rmi $BASE_IMAGE-aws
     docker rmi $BASE_IMAGE-azure
+    docker rmi $BASE_IMAGE-gcp    
 fi
