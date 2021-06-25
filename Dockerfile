@@ -21,7 +21,7 @@ RUN ./get_helm.sh
 # run
 # *******************************************************
 FROM ubuntu
-SHELL bash
+SHELL ["bash"]
 COPY --from=0 /usr/local/bin/ke /usr/local/bin
 COPY --from=0 /usr/local/bin/helm /usr/local/bin
 
