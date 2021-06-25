@@ -14,6 +14,8 @@ This project is still rather new so the list of included tools is still sparse, 
 * binwalk 
 * nmap 
 * curl
+* tcpdump
+* ping
 
 ## Building
 
